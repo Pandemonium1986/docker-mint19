@@ -34,6 +34,7 @@ jobs:
       uses:                    github/super-linter@v4
       env:
         VALIDATE_ALL_CODEBASE: false
+        VALIDATE_GITHUB_ACTIONS: false
         DEFAULT_BRANCH:        ${{ env.CURRENT_BRANCH }}
         LINTER_RULES_PATH:     "."
   docker:
